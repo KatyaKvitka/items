@@ -8,7 +8,7 @@ export class ItemsService{
 		console.log('ItemsService Initialize...');
 	}
 	getItems(){
-		return this.http.get('../../src/assets/items.json').map(res => res.json());
+		return this.http.get("../../assets/items.json").map(res => res.json());
 	}
 
 	
