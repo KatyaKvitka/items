@@ -10,6 +10,6 @@ export class ItemsService{
 	}
 	getItems(){
 		console.log('ItemsService Initialize2...');
-		return this.http.get("../../assets/items.json").map(res => res.json());
+		return this.http.get("./assets/items.json").map(res => res.json());
 	}
 }
